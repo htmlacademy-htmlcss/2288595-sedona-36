@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <a class="logo">
-        <img class="logo-sedona" src="" alt="Логотип City of Sedona">
+        <img class="logo-sedona" src="#" alt="Логотип City of Sedona">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -17,10 +17,10 @@
           </li>
 
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
 
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-current">
             <a class="navigation-link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
@@ -68,8 +68,6 @@
         <ul class="advantages-list">
           <li class="advantages-item">
             <img class="advantages-item-city" src="" alt="Вид на кафе и горы Седоны">
-          </li>
-          <li class="advantages-item">
             <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
@@ -90,10 +88,7 @@
           </li>
 
           <li class="advantages-item">
-            <img class="advantages-item-devil's-bridge" src="" alt="Мост дьявола в Седоне">
-          </li>
-
-          <li class="advantages-item">
+            <img class="advantages-item-devils-bridge" src="" alt="Мост дьявола в Седоне">
             <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -139,14 +134,14 @@
       <section class="search-hotel">
         <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button" type="button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <button class="button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
 
       <section class="newsletter">
         <h2 class="newsletter-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsleter-email">E-mail</label>
+          <label class="visually-hidden" for="newsleter-email">E-mail</label>
           <input class="field" placeholder="Ваш E-mail" name="newsleter-email" id="newsleter-email" required>
           <button class="button newsleter-button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
@@ -159,20 +154,20 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button vk-button" href="https://vk.com/htmlacademy">
-              <span class="visually hidden">ВКонтакте</span>
+            <a class="button button-vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
 
           <li class="footer-social-item">
-            <a class="button telegram-button" href="https://t.me/htmlacademy">
-              <span class="visually hidden">Телеграм</span>
+            <a class="button button-telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
 
           <li class="footer-social-item">
-            <a class="button youtube-button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually hidden">Ютуб</span>
+            <a class="button button-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
             </a>
            </li>
         </ul>
@@ -188,8 +183,8 @@
 
       <section class="footer-site-htmlacademy">
         <h2 class="visually-hidden">Разработка сайта</h2>
-        <a class="button youtube-button" href="https://htmlacademy.ru/">
-          <span class="visually hidden">Htmlacademy</span>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Htmlacademy</span>
         </a>
       </section>
     </footer>
