@@ -242,6 +242,16 @@ body {
   color: #ffffff;
 }
 
+
+/* Label */
+.control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+
+/* Button */
 .button-accept {
   background-color: #82B3D3;
 }
@@ -251,15 +261,12 @@ body {
 }
 
 
-/* Label */
-.control-label {
-  font-weight: 700;
-}
-
+/* Sorting */
 .sorting-container {
   color: #000000;
   background-color: #ffffff;
 }
+
 
 /* Light */
 .button-active {
