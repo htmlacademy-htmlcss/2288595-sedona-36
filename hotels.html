@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона Гостиницы</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -55,7 +56,7 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-home" href="index.html">
+            <a class="breadcrumbs-link" href="index.html">
               <span class="visually-hidden">Домой</span>
             </a>
           </li>
@@ -68,7 +69,6 @@
         <section class="hotels-list">
           <h2 class="visually hidden">Фильтры для поиска жилья в Седоне</h2>
           <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
-
             <fieldset class="hotels-filter-group">
               <legend class="hotels-filter-title">Инфраструктура</legend>
               <ul class="hotels-filter-list">
@@ -129,22 +129,23 @@
             </fieldset>
 
             <div class="button-filter">
-              <button class="button button-accept" type="submit">ПРИМЕНИТЬ</button>
-              <button class="button button-reset" type="reset">СБРОСИТЬ</button>
+              <button class="button button-accept" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
     </header>
 
       <section class="hotel-card">
-        <h2 class="hotel-card-title">НАЙДЕНО ГОСТИНИЦ:<span>38</span></h2>
+        <h2 class="hotel-card-title">Найдено гостиниц:<span>38</span></h2>
 
+        <div class="sorting-container">
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <a class="button button active" href="#">
+        <a class="button button-active" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a class="button" href="#">
@@ -153,6 +154,7 @@
         <a class="button" href="#">
           <span class="visually-hidden">Показать одну карточку на странице</span>
         </a>
+      </div>
 
 
         <ul class="hotel-list">
@@ -166,8 +168,8 @@
               </a>
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 4000 ₽</span>
-              <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
-              <button class="button button-add-to-favorites">В ИЗБРАННОЕ</button>
+              <a class="button button-more" href="#">Подробнее</a>
+              <button class="button button-add-to-favorites">В избранное</button>
               <span class="stars">
                 <span class="visually-hidden">4 Звезды</span>
               </span>
@@ -185,8 +187,8 @@
               </a>
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 5000 ₽</span>
-              <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
-              <button class="button button-add-in-favorites">В ИЗБРАННОМ</button>
+              <a class="button button-more" href="#">Подробнее</a>
+              <button class="button button-add-in-favorites">В избранном</button>
               <span class="stars">
                 <span class="visually-hidden">4 Звезды</span>
               </span>
@@ -204,8 +206,8 @@
               </a>
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 2500 ₽</span>
-              <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
-              <button class="button button-add-to-favorites">В ИЗБРАННОЕ</button>
+              <a class="button button-more" href="#">Подробнее</a>
+              <button class="button button-add-to-favorites">В избранное</button>
               <span class="stars">
                 <span class="visually-hidden">3 Звезды</span>
               </span>
@@ -223,8 +225,8 @@
               </a>
               <span class="hotel-card-type">Гостиница</span>
               <span class="hotel-card-price">От 1500 ₽</span>
-              <a class="button button-more" href="#">ПОДРОБНЕЕ</a>
-              <button class="button button-add-to-favorites">В ИЗБРАННОЕ</button>
+              <a class="button button-more" href="#">Подробнее</a>
+              <button class="button button-add-to-favorites">В избранное</button>
               <span class="stars">
                 <span class="visually-hidden">2 Звезды</span>
               </span>
@@ -259,13 +261,13 @@
         </ul>
       </section>
 
-      <section class="newsletter">
-        <h2 class="newsletter-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsleter-email">E-mail</label>
-          <input class="field" placeholder="Ваш E-mail" name="newsleter-email" id="newsleter-email" required>
-          <button class="button newsleter-button" type="submit">ПОДПИСАТЬСЯ</button>
+      <section class="mail-hotels">
+        <h2 class="mail-title-hotels">Подпишитесь на рассылку</h2>
+        <p class="mail-description-hotels">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="mail-email">E-mail</label>
+          <input class="field" placeholder="Ваш e-mail" name="mail-email" id="mail-email" required>
+          <button class="button mail-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
