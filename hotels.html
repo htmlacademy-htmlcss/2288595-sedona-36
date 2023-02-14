@@ -163,7 +163,7 @@
         <ul class="hotel-list">
          <div class="catalog-products">
           <li class="hotel-card">
-            <article>
+            <div class="hotel-card-inside">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Фото гостиницы Amara Resort & Spa">
               </a>
@@ -178,11 +178,11 @@
                 <span class="visually-hidden">4 Звезды</span>
               </span>
               <span class="hotel-card-rating">Рейтинг: 8,5</span>
-            </article>
+            </div>
           </li>
 
           <li class="hotel-card">
-            <article>
+            <div class="hotel-card-inside">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Фото гостиницы Villas at Poco Diablo">
               </a>
@@ -197,11 +197,11 @@
                 <span class="visually-hidden">4 Звезды</span>
               </span>
               <span class="hotel-card-rating">Рейтинг: 9,2</span>
-            </article>
+            </div>
           </li>
 
           <li class="hotel-card">
-            <article>
+            <div class="hotel-card-inside">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Фото гостиницы Desert Quail Inn">
               </a>
@@ -216,11 +216,11 @@
                 <span class="visually-hidden">3 Звезды</span>
               </span>
               <span class="hotel-card-rating">Рейтинг: 6,9</span>
-            </article>
+            </div>
           </li>
 
           <li class="hotel-card">
-            <article>
+            <div class="hotel-card-inside">
               <a class="hotel-card-link" href="#">
                 <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Фото гостиницы GreenTree Inn">
               </a>
@@ -235,7 +235,7 @@
                 <span class="visually-hidden">2 Звезды</span>
               </span>
               <span class="hotel-card-rating">Рейтинг: 5,0</span>
-            </article>
+            </div>
           </li>
          </div>
         </ul>
@@ -257,7 +257,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item-point">
+          <li class="pagination-item">
             <a class="pagination-point">···</a>
           </li>
           <li class="pagination-item">
@@ -267,13 +267,15 @@
       </section>
 
       <section class="mail-hotels">
-        <h2 class="mail-title-hotels">Подпишитесь на рассылку</h2>
-        <p class="mail-description-hotels">Только полезная информация и никакого спама, честное бойскаутское!</p>
+       <div class="mail-block">
+        <h2 class="mail-title mail-title-hotels">Подпишитесь на рассылку</h2>
+        <p class="mail-description mail-description-hotels">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="mail-email">E-mail</label>
-          <input class="field" placeholder="Ваш E-mail" name="mail-email" id="mail-email" required>
+          <label class="visually-hidden" for="mail-email">E-mail</label>
+          <input class="field-hotels" placeholder="Ваш E-mail" name="mail-email" id="mail-email" required>
           <button class="button mail-button" type="submit">Подписаться</button>
         </form>
+       </div>
       </section>
       </div>
     </main>
