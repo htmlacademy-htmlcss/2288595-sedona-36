@@ -449,7 +449,7 @@ body {
   color: #ffffff;
   font-weight: 700;
   margin: 0;
-  margin  -bottom: 8px;
+  margin-bottom: 8px;
 }
 
 
@@ -600,9 +600,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1060px;
-  height: 896px;
   padding: 0;
   margin-left: 70px;
+  gap: 16px;
 }
 
 .hotel-card {
@@ -611,14 +611,12 @@ body {
   list-style: none;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-  margin-bottom: 20px;
 }
 
 .hotel-card-inside {
   display: grid;
-  grid-template-columns: 140px 140px;
-  grid-gap: 20px;
-  grid-template-rows: 212px min-content auto 36px 36px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   grid-template-areas:
     "hotel-card-image hotel-card-image"
     "hotel-card-title hotel-card-title"
@@ -631,6 +629,7 @@ body {
 .hotel-card-image{
   grid-area: hotel-card-image;
   grid-row: 1 / -1;
+  display: block;
 }
 
 .hotel-card-title {
@@ -653,11 +652,15 @@ body {
 }
 
 .hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 1060px;
   padding: 0;
+  margin-left: 70px;
+  gap: 16px;
   margin-top: 0;
 }
-
 
 
 /* Link */
@@ -680,12 +683,12 @@ body {
   padding: 8px;
 }
 
-.button-add-to-favorites {
+.button-add-to-favourites {
   background-color: #82B3D3;
 
 }
 
-.button-add-in-favorites {
+.button-add-in-favourites {
   background-color: #7DB54F;
 }
 
@@ -770,4 +773,3 @@ body {
   border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
 }
-
