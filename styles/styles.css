@@ -31,6 +31,12 @@ body {
   background-color: #F2F2F2;
 }
 
+.shadow {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 1200px;
+  margin:auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -330,7 +336,7 @@ body {
 .advantages-title::before {
   content: " ";
   display: flex;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   width: 60px;
   height: 2px;
   position: absolute ;
@@ -343,6 +349,11 @@ body {
 .advantages-title-white {
   color:#ffffff;
 }
+
+.advantages-title-white::before {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 
 .advantages-description {
   text-align: center;
@@ -1571,6 +1582,8 @@ body {
   background-color: #f2f2f2;
 }
 
+/* Modal */
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -1592,31 +1605,35 @@ body {
   background-color: #ffffff;
 }
 
-.modal-search{
+.modal-search {
   width: 717px;
-  border: 30px;
+  border-radius: 30px;
   box-sizing: border-box;
 }
 
 .modal-close-button {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  right: 0;
-  width: 56px;
-  height: 44px;
-  background-color: #ffffff;
+  position: relative;
+  left: 543px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
   border: none;
   background-image: url("../images/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  padding: 0;
 }
+
+.modal-content {
+  margin-top: -64px;
+}
+
 
 .modal-title {
   margin: 0;
-  margin-bottom: 24px;
-  font-family: "PT Sans", sans-serif;
+  margin-bottom: 64px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1624,22 +1641,25 @@ body {
   text-transform: uppercase;
 }
 
-.search-form .field-group {
-  margin: 0;
-  margin-bottom: 16px;
+.block-date-fields {
+  display: flex;
+  justify-content: space-between;
 }
 
-.search-form-user-options .control-label {
-  font-weight: 400;
+.block-date-fields:not(:last-child) {
+  margin-bottom: 48px;
 }
 
-.search-form .field-modal {
-  width: 440px;
+
+.field-group-date {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 12px;
 }
 
 .field-date {
   width: 440px;
-  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1649,28 +1669,78 @@ body {
   background-color: #f2f2f2;
   color: #000000;
   padding-left: 20px;
-  padding-right: 20px;
   box-sizing: border-box;
+  background-image: url("../images/catalog/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px bottom 14px;
 }
 
-
-
-.search-form-recovery {
-  line-height: 22px;
-  color: #000000;
-}
-
-
-.date {
+.adults {
+  font-family: inherit;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 0;
 }
 
 
+.adults-block {
+  width: 110px;
+  display: flex;
+}
+
+.adults-child-minus {
+  width: 40px;
+  background-color: #F2F2F2;
+  border: none;
+  background-image: url("../images/catalog/minus.svg");
+  background-repeat: no-repeat;
+  padding: 0;
+  border-radius: 4px 0 0 4px;
+  background-position: center;
+}
+
+.adults-child {
+  width: 31px;
+  height: 48px;
+  border: none;
+  background-color: #F2F2F2;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.adults-child-plus {
+  width: 40px;
+  background-color: #F2F2F2;
+  border: none;
+  background-image: url("../images/catalog/plus.svg");
+  background-repeat: no-repeat;
+  padding: 0;
+  border-radius: 0 4px 4px 0;
+  background-position: center;
+}
+
+.round-i {
+  width: 26px;
+  height: 26px;
+  background-color: #83B3D3;
+  background-image: url("../images/catalog/i.svg");
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 11px;
+  right: -5px;
+}
+
+
+
 .search-form-button {
-  margin-bottom: 64px;
-  margin-top: 48px;
   background-color: #82B3D3;
   font-size: 20px;
   line-height: 24px;
@@ -1681,8 +1751,4 @@ body {
   color: #ffffff;
   border-radius: 10px;
   padding: 0;
-}
-
-.search-form .button + .button {
-  margin: 0;
 }
