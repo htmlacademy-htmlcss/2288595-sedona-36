@@ -100,6 +100,27 @@ body {
   flex-grow: 1;
 }
 
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:focus {
+  outline: none;
+}
+
+.navigation-link:focus-visible {
+  outline: none;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
+.navigation-link:disabled {
+  opacity: 0.1;
+}
+
+
 .navigation-list {
   width: 470px;
   margin: 0;
@@ -196,6 +217,28 @@ body {
   background-image: url("../images/heart.svg");
   position: relative;
 }
+
+.navigation-user-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-user-link:focus {
+  outline: none;
+}
+
+.navigation-user-link:focus-visible {
+  outline: none;
+}
+
+.navigation-user-link:active {
+  opacity: 0.3;
+}
+
+.navigation-user-link:disabled {
+  opacity: 0.1;
+}
+
+
 
 
 .favorites-number {
@@ -538,11 +581,6 @@ body {
   background-color: #E5E5E5;
 }
 
-.mail-button:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
-}
 
 .search-hotel {
   background-color: #ffffff;
@@ -881,6 +919,7 @@ body {
   background-color: #ffffff;
   border-radius: 4px;
   left: 0;
+  box-sizing: border-box;
 }
 
 .control-label {
@@ -888,8 +927,13 @@ body {
   font-size: 18px;
   line-height: 23px;
 }
+
 .control:hover {
   opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
 }
 
 .control-mark:focus {
@@ -901,9 +945,12 @@ body {
   outline: none;
 }
 
-.control:active {
-  opacity: 0.3;
+.control-mark:active {
+  border: #83B3D3 solid 2px;
+  outline: none;
 }
+
+
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
   content: " ";
@@ -1039,18 +1086,6 @@ body {
   margin: 0;
 }
 
-.block-date-fields {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  display: flex;
-  width: 143px;
-  height: 48px;
-  background-color: #F2F2F2;
-  border-radius: 4px 0 0 4px;
-  margin-right: 2px;
-}
-
 
 .price-from {
   font-size: 18px;
@@ -1090,6 +1125,29 @@ body {
 
 .price-label {
   border-radius: 0 4px 4px 0;
+}
+
+.price:focus {
+  outline: none;
+  border: #83B3D3 solid 3px;
+}
+
+
+.price:focus-visible {
+  outline: none;
+  border: #83B3D3 solid 3px;
+}
+
+.price:active {
+  border: #83B3D3 solid 3px;
+}
+
+.price:disabled {
+  background-color: #E5E5E5;
+}
+
+.price:not(:placeholder-shown) {
+  border: 2px solid #000000;
 }
 
 .range-wrapper-inputs {
@@ -1252,8 +1310,9 @@ body {
 }
 
 .select-control:active {
-  border: 2px solid #3F5E72;
+  border: 2px solid #68A2CA;
 }
+
 
 .select-control:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
@@ -1638,16 +1697,10 @@ body {
   background-color: #E5E5E5;
 }
 
-.field:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
+.field:not(:placeholder-shown) {
+  border: 2px solid #000000;
 }
 
-.field::placeholder {
-  color: #000000;
-  opacity: 60%;
-}
 
 .field-hotels {
   background-color: #f2f2f2;
@@ -1699,6 +1752,34 @@ body {
   padding: 0;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  border: #83B3D3 solid 3px;
+  outline: none;
+}
+
+.modal-close-button:focus-visible {
+  background-color: #E6E6E6;
+  border: #83B3D3 solid 3px;
+  outline: none;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  opacity: 0.3;
+  border: none;
+}
+
+.modal-close-button:disabled {
+  background-color: #E5E5E5;
+}
+
+
+
 
 
 .modal-title {
@@ -1718,8 +1799,9 @@ body {
   align-items: center;
 }
 
-.block-date-fields:not(:last-child) {
-  margin-bottom: 48px;
+.selection-block {
+  display: flex;
+  align-items: center;
 }
 
 
@@ -1741,7 +1823,7 @@ body {
   border-radius: 4px;
   background-color: #f2f2f2;
   color: #000000;
-  padding-left: 20px;
+  padding: 0 0 0 20px;
   box-sizing: border-box;
   background-image: url("../images/catalog/calendar.svg");
   background-repeat: no-repeat;
@@ -1756,6 +1838,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   color: #000000;
+  margin-right: 46px;
 }
 
 .child {
@@ -1812,6 +1895,8 @@ body {
 .children-round-i {
   display: flex;
   align-items: center;
+  margin-left: 88px;
+  margin-right: 46px;
 }
 
 .round-i {
@@ -1837,4 +1922,49 @@ body {
   color: #ffffff;
   border-radius: 10px;
   padding: 0;
+  margin-top: 48px;
+}
+
+.text-under {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #FF5757;
+  margin: 4px 0 23px 157px;
+}
+
+.text-black {
+  color: #333333;
+}
+
+.pop-up {
+  background-color: #333333;
+  width: 256px;
+  min-height: 143px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 279px;
+  margin-top: 15px;
+}
+
+.pop-up::after {
+  content: " ";
+  display: block;
+  background: url("../images/triangle.svg");
+  width: 18px;
+  height: 9px;
+  background-repeat: no-repeat;
+  margin-top: -173px;
+  margin-left: 119px;
+
+}
+
+
+.text-inside-pop-up {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 15px 18px 18px 22px;
 }
