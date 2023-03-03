@@ -1778,6 +1778,14 @@ body {
   background-color: #E5E5E5;
 }
 
+.round-i .pop-up{
+  opacity: 1;
+}
+
+.round-i:hover .pop-up{
+  opacity: 1;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1940,8 +1948,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   position: absolute;
-  margin-left: 279px;
-  margin-top: 15px;
+  margin-top: 36px;
+  margin-left: -115px;
 }
 
 .pop-up::after {
