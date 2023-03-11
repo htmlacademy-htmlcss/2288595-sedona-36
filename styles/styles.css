@@ -1,5 +1,4 @@
 
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -931,7 +930,10 @@ body {
   border: none;
 }
 
-.button-accept:hover,
+.button-accept:hover {
+  background-color: #68A2CA;
+}
+
 .button-accept:focus,
 .button-accept:focus-visible {
   background-color: #68A2CA;
@@ -1544,6 +1546,7 @@ body {
 
 .modal-close-button:hover {
   background-color: #E6E6E6;
+  cursor: pointer;
 }
 
 .modal-close-button:focus-visible {
@@ -1557,7 +1560,7 @@ body {
   border: none;
 }
 
-.modal-close-button:active svg .icon-cross-path {
+.modal-close-button:active path {
   fill: #000000;
   opacity: 0.3;
 }
@@ -1665,6 +1668,7 @@ body {
 
 .search-form-button:hover {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .search-form-button:focus,
@@ -1768,6 +1772,7 @@ body {
   width: 40px;
   background-color: #F2F2F2;
   border: none;
+  cursor: pointer;
 }
 
 .adults-child-minus:hover .icon-minus-path,
