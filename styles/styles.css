@@ -1809,11 +1809,12 @@ body {
   outline: none;
 }
 
-.adults-child-minus:focus-visible svg .icon-minus-path,
-.adults-child-plus:focus-visible svg .icon-plus-path {
+.adults-child-minus:focus-visible path,
+.adults-child-plus:focus-visible path {
   fill: #000000;
   opacity: 1;
 }
+
 
 .adults-child {
   width: 31px;
