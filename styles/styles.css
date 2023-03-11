@@ -32,6 +32,12 @@ body {
   background-color: #F2F2F2;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .shadow {
   margin: auto;
   width: 1200px;
@@ -313,6 +319,10 @@ body {
   background-color: #ffffff;
 }
 
+.advantages-image {
+  width: 800px;
+}
+
 .advantages-block {
   display: flex;
   flex-direction: column;
@@ -320,7 +330,7 @@ body {
 }
 
 .advantages-block-with-picture {
-  padding: 102px 86px 102px 84px;
+  padding: 102px 84px 102px 84px;
 }
 
 .advantages-item {
@@ -532,7 +542,7 @@ body {
 
 .mail-form {
   display: flex;
-  margin-top: 54px;
+  margin-top: 55px;
 }
 
 .mail-block {
@@ -540,7 +550,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 96px 258px 104px 258px;
+  padding: 96px 258px 105px 258px;
 }
 
 .mail-block-hotels {
@@ -624,7 +634,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 45px 70px 35px 70px;
+  padding: 44px 69px 35px 70px;
   background-color: #ffffff;
 }
 
@@ -1008,7 +1018,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-  border: transparent solid 3px;
+  border:  2px solid transparent;
   border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
 }
@@ -1027,8 +1037,7 @@ body {
 }
 
 .price:focus-visible {
-  border: #83B3D3 solid 3px;
-  outline: none;
+  outline: 3px solid #83B3D3;
 }
 
 .price:disabled {
@@ -1089,7 +1098,7 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: 0;
+  right: -2px;
 }
 
 /* Sorting */
@@ -1229,6 +1238,10 @@ body {
   grid-row: 1 / -1;
 }
 
+.hotel-card-image {
+  width: 300px;
+}
+
 .hotel-card-main {
   display: flex;
   max-width: 400px;
@@ -1338,7 +1351,7 @@ body {
 .button-more {
   box-sizing: border-box;
   padding: 6px;
-  border: transparent solid 2px;
+  border: 2px solid transparent;
 }
 
 .button-more:active {
@@ -1600,50 +1613,30 @@ body {
   font-weight: 700;
   height: 48px;
   color: #000000;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 4px;
   background-color: #f2f2f2;
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
-  background-position: right 20px bottom 17px;
+  background-position: right 20px bottom 14px;
 }
 
 .field-date:hover {
   background-color: #E6E6E6;
 }
 
-.field-date:active,
-.field-date:focus,
+.field-date:not(:placeholder-shown):focus {
+  border: 2px solid #000000;
+  outline: none;
+}
+
 .field-date:focus-visible {
-  outline: #83B3D3 solid 3px;
+  outline: 3px solid #83B3D3;
 }
 
 .field-date:disabled {
   background-color: #E5E5E5;
 }
-
-.field-date:not(:placeholder-shown) {
-  outline: 2px solid #000000;
-}
-
-.price:hover {
-  background-color: #E6E6E6
-}
-
-.price:not(:placeholder-shown):focus {
-  border: 2px solid #000000;
-  outline: none;
-}
-
-.price:focus-visible {
-  border: #83B3D3 solid 3px;
-  outline: none;
-}
-
-.price:disabled {
-  background-color: #747272;
-}
-
 
 .icon-minus-path,
 .icon-plus-path {
